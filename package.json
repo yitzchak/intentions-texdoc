@@ -1,0 +1,48 @@
+{
+  "name": "tex-doc",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Access TeX documentation from inside Atom.",
+  "author": "Tarn Burton <twburton@gmail.com>",
+  "keywords": [
+    "tex",
+    "latex"
+  ],
+  "repository": "https://github.com/yitzchak/tex-doc",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/yitzchak/tex-doc/issues"
+  },
+  "dependencies": {
+    "lodash": "^4.13.0",
+    "atom-space-pen-views": "^2.2.0"
+  },
+  "devDependencies": {
+    "semver": "^5.3.0"
+  },
+  "package-deps": [
+  ],
+  "configSchema": {
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "atom",
+      "latex",
+      "afterEach",
+      "beforeEach",
+      "describe",
+      "expect",
+      "it",
+      "jasmine",
+      "runs",
+      "spyOn",
+      "waitsFor",
+      "waitsForPromise",
+      "HTMLDivElement"
+    ]
+  }
+}
