@@ -26,8 +26,25 @@
   "package-deps": [
   ],
   "configSchema": {
-  },
-  "standard": {
+      "builder": {
+        "description": "Select documentation provider. MiKTeX distribution is required for mthelp. TeX Live is required for texdoc",
+        "type": "string",
+        "enum": [
+          "texdoc",
+          "mthelp"
+        ],
+        "default": "texdoc",
+        "order": 1
+      },
+      "showResultInAtom": {
+        "title": "Show Result in Atom",
+        "description": "Show result in Atom. Depends on the pdf-view package being installed.",
+        "type": "boolean",
+        "default": false,
+        "order": 2
+      }
+    },
+    "standard": {
     "parser": "babel-eslint",
     "globals": [
       "atom",
