@@ -26,7 +26,7 @@
   "package-deps": [
   ],
   "configSchema": {
-      "builder": {
+      "provider": {
         "description": "Select documentation provider. MiKTeX distribution is required for mthelp. TeX Live is required for texdoc",
         "type": "string",
         "enum": [
