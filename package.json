@@ -42,6 +42,19 @@
         "type": "boolean",
         "default": false,
         "order": 2
+      },
+      "split": {
+        "description": "Open view in split pane",
+        "type": "string",
+        "enum": [
+          "no",
+          "left",
+          "right",
+          "top",
+          "botton"
+        ],
+        "default": "no",
+        "order": 3
       }
     },
     "standard": {

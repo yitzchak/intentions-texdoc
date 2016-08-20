@@ -18,6 +18,10 @@ This package relies on a TeX installation. Currently [TeX Live](https://www.tug.
 
 ## Usage
 
+Either select or move the cursor to a keyword in a TeX or LaTeX document and press <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>H</kbd> open the most relevant document or press <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>L</kbd> to open list of relevant documents.
+
+Text based documents can be opened in Atom by selecting the `Show Result in Atom` option in the settings page. If the
+[pdf-view](https://atom.io/packages/pdf-view) is installed then pdf documents will also be opened in Atom when `Show Result in Atom` is enabled. All other other documents will be opened using either texdoc or mthelp, depending on which one is selected in your settings.
 
 ## Status
 
