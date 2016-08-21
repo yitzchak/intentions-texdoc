@@ -31,9 +31,6 @@ addons:
     - libgnome-keyring-dev
     - fakeroot
 
-before_install:
-  - script/travis-ci-before-install.sh
-
 branches:
   only:
     - master
