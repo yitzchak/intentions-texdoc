@@ -14,6 +14,7 @@ describe('intentions-texdoc for Atom', () => {
           const position = new Point(0, 20)
           editor.setCursorBufferPosition(position)
           return main.provideIntentions().getIntentions({ textEditor: editor, bufferPosition: position }).then(matches => {
+            console.log(_.map(matches, 'title'))
             expect(_.some(matches, match => match.title.match(/classes.pdf/))).toBe(true, "Search on article finds classes.pdf")
             return true
           })
