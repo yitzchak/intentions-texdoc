@@ -1,6 +1,0 @@
-{
-  "atom-text-editor[data-grammar~='latex']": {
-    "ctrl-alt-h": "tex-doc:context-help",
-    "ctrl-alt-l": "tex-doc:show-matches"
-  }
-}

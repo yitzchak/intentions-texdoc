@@ -2,7 +2,7 @@
   "name": "tex-doc",
   "main": "./lib/main",
   "version": "0.0.0",
-  "description": "Access TeX documentation from inside Atom.",
+  "description": "Access TeX documentation from inside Atom using intentions.",
   "author": "Tarn Burton <twburton@gmail.com>",
   "keywords": [
     "tex",
@@ -18,46 +18,52 @@
   },
   "dependencies": {
     "lodash": "^4.13.0",
-    "atom-space-pen-views": "^2.2.0"
+    "atom-package-deps": "^4.0.0"
   },
   "devDependencies": {
     "semver": "^5.3.0"
   },
   "package-deps": [
+    "intentions"
+  ],
+  "activationHooks": [
+    "language-latex:grammar-used",
+    "language-tex:grammar-used",
+    "language-latexsimple:grammar-used"
   ],
   "configSchema": {
-      "provider": {
-        "description": "Select documentation provider. MiKTeX distribution is required for mthelp. TeX Live is required for texdoc",
-        "type": "string",
-        "enum": [
-          "texdoc",
-          "mthelp"
-        ],
-        "default": "texdoc",
-        "order": 1
-      },
-      "showResultInAtom": {
-        "title": "Show Result in Atom",
-        "description": "Show result in Atom. Depends on the pdf-view package being installed.",
-        "type": "boolean",
-        "default": false,
-        "order": 2
-      },
-      "split": {
-        "description": "Open view in split pane",
-        "type": "string",
-        "enum": [
-          "no",
-          "left",
-          "right",
-          "top",
-          "botton"
-        ],
-        "default": "no",
-        "order": 3
-      }
+    "provider": {
+      "description": "Select documentation provider. MiKTeX distribution is required for mthelp. TeX Live is required for texdoc",
+      "type": "string",
+      "enum": [
+        "texdoc",
+        "mthelp"
+      ],
+      "default": "texdoc",
+      "order": 1
     },
-    "standard": {
+    "showResultInAtom": {
+      "title": "Show Result in Atom",
+      "description": "Show result in Atom. Depends on the pdf-view package being installed.",
+      "type": "boolean",
+      "default": false,
+      "order": 2
+    },
+    "split": {
+      "description": "Open view in split pane",
+      "type": "string",
+      "enum": [
+        "no",
+        "left",
+        "right",
+        "top",
+        "botton"
+      ],
+      "default": "no",
+      "order": 3
+    }
+  },
+  "standard": {
     "parser": "babel-eslint",
     "globals": [
       "atom",
@@ -74,5 +80,12 @@
       "waitsForPromise",
       "HTMLDivElement"
     ]
+  },
+  "providedServices": {
+    "intentions:list": {
+      "versions": {
+        "1.0.0": "provideIntentions"
+      }
+    }
   }
 }
