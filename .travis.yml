@@ -32,6 +32,7 @@ addons:
     - fakeroot
     - texlive-latex-base
     - texlive-latex-base-doc
+    - texlive-luatex
 
 ;branches:
   only:
