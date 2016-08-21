@@ -1,5 +1,5 @@
 {
-  "name": "tex-doc",
+  "name": "intentions-texdoc",
   "main": "./lib/main",
   "version": "0.0.0",
   "description": "Access TeX documentation from inside Atom using intentions.",
@@ -8,13 +8,13 @@
     "tex",
     "latex"
   ],
-  "repository": "https://github.com/yitzchak/tex-doc",
+  "repository": "https://github.com/yitzchak/intentions-texdoc",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0"
   },
   "bugs": {
-    "url": "https://github.com/yitzchak/tex-doc/issues"
+    "url": "https://github.com/yitzchak/intentions-texdoc/issues"
   },
   "dependencies": {
     "lodash": "^4.13.0",

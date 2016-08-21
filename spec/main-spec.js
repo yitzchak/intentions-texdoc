@@ -3,10 +3,10 @@
 import * as _ from 'lodash'
 import * as path from 'path'
 
-describe('Tex-Doc for ATom', () => {
+describe('intentions-texdoc for ATom', () => {
   beforeEach(() => {
     waitsForPromise(() => {
-      return atom.packages.activatePackage('tex-doc')
+      return atom.packages.activatePackage('intentions-texdoc')
     })
   })
 
