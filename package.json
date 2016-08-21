@@ -6,7 +6,8 @@
   "author": "Tarn Burton <twburton@gmail.com>",
   "keywords": [
     "tex",
-    "latex"
+    "latex",
+    "intentions"
   ],
   "repository": "https://github.com/yitzchak/intentions-texdoc",
   "license": "MIT",
@@ -33,7 +34,7 @@
   ],
   "configSchema": {
     "provider": {
-      "description": "Select documentation provider. MiKTeX distribution is required for mthelp. TeX Live is required for texdoc",
+      "description": "TeX documentation provider. MiKTeX distribution is required for mthelp. TeX Live is required for texdoc",
       "type": "string",
       "enum": [
         "texdoc",
@@ -50,16 +51,15 @@
       "order": 2
     },
     "split": {
-      "description": "Open view in split pane",
+      "description": "Pane to document in when result is shown in Atom",
       "type": "string",
       "enum": [
-        "no",
         "left",
         "right",
         "top",
         "botton"
       ],
-      "default": "no",
+      "default": "left",
       "order": 3
     }
   },
