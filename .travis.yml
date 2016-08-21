@@ -24,7 +24,7 @@ env:
     - ATOM_CHANNEL=beta
 
 before_install:
-  -  if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then wget http://mirror.ctan.org/systems/mac/mactex/BasicTeX.pkg -O "/tmp/BasicTeX.pkg"; sudo installer -pkg "/tmp/BasicTeX.pkg" -target /; rm /tmp/BasicTeX.pkg; export PATH=/usr/texbin:$PATH; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then wget http://mirror.ctan.org/systems/mac/mactex/BasicTeX.pkg -O "/tmp/BasicTeX.pkg"; sudo installer -pkg "/tmp/BasicTeX.pkg" -target /; rm /tmp/BasicTeX.pkg; export PATH=/usr/texbin:$PATH; sudo tlmgr install texdoc; fi
 
 addons:
   apt:
