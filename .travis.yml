@@ -30,6 +30,11 @@ addons:
     - git
     - libgnome-keyring-dev
     - fakeroot
+    - texlive-latex-base
+    - texlive-latex-base-doc 
+
+before_install:
+  - script/travis-ci-before-install.sh
 
 branches:
   only:

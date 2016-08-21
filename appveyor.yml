@@ -19,7 +19,7 @@ environment:
 
 install:
   - ps: Install-Product node 5
-  - sh ./script/install-texlive.sh
+  - cmd: choco install miktex
 
 build_script:
   - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/atom/ci/master/build-package.ps1'))
