@@ -30,9 +30,7 @@ addons:
     - git
     - libgnome-keyring-dev
     - fakeroot
-    - texlive-latex-base
-    - texlive-latex-base-doc
-    - texlive-luatex
+    - texlive-full
 
 ;branches:
   only:
