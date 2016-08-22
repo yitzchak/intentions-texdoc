@@ -7,7 +7,10 @@ import * as path from 'path'
 describe('intentions-texdoc for Atom', () => {
   let main = require('../lib/main')
   atom.config.set('intentions-texdoc.provider', process.env.APPVEYOR ? 'mthelp' : 'texdoc')
-  main.setDocProvider()
+  if (process.env.APPVEYOR) {
+    atom.config.set('intentions-texdoc.providerPath', 'C:\\Program Files\\MiKTeX 2.9\\miktex\\bin\\x64\\mthelp')
+  }
+   main.setDocProvider()
 
   it('finds matching documentation', () => {
       waitsForPromise(() => {
