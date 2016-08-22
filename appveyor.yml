@@ -22,7 +22,6 @@ install:
   - cmd: choco install miktex
 
 build_script:
-  - cmd: apm config set intentions-texdoc.provider mthelp 
   - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/atom/ci/master/build-package.ps1'))
 
 test: off
