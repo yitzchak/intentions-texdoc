@@ -5,8 +5,6 @@ if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
   sudo installer -pkg "/tmp/BasicTeX.pkg" -target /
   rm /tmp/BasicTeX.pkg
   export PATH=/usr/texbin:$PATH
-  texdoc --help
   sudo tlmgr update --self
   sudo tlmgr install texdoc
-  texdoc --help
 fi
