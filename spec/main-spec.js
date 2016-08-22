@@ -9,6 +9,7 @@ describe('intentions-texdoc for Atom', () => {
 
   if (process.env.APPVEYOR) {
     atom.config.set('intentions-texdoc.provider', 'mthelp')
+    atom.config.set('intentions-texdoc.providerPath', 'C:\\Program Files\\MiKTeX 2.9\\miktex\\bin\\x64')
   }
   main.setDocProvider()
 

@@ -34,13 +34,19 @@
   ],
   "configSchema": {
     "provider": {
-      "description": "TeX documentation provider. MiKTeX distribution is required for mthelp. TeX Live is required for texdoc",
+      "description": "TeX documentation provider. MiKTeX distribution is required for mthelp. TeX Live is required for texdoc.",
       "type": "string",
       "enum": [
         "texdoc",
         "mthelp"
       ],
       "default": "texdoc",
+      "order": 1
+    },
+    "providerPath": {
+      "description": "Path to TeX documentation provider. If blank then the default name will be used.",
+      "type": "string",
+      "default": "",
       "order": 1
     },
     "showResultInAtom": {
