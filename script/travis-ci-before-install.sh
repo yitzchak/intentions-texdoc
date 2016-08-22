@@ -6,5 +6,6 @@ if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
   rm /tmp/BasicTeX.pkg
   export PATH=/Library/TeX/texbin:$PATH
   sudo tlmgr update --self
-  sudo tlmgr install texdoc graphics
+  sudo tlmgr option docfiles 1
+  sudo tlmgr install --reinstall texdoc graphics
 fi
