@@ -11,6 +11,7 @@ describe('intentions-texdoc for Atom', () => {
     atom.config.set('intentions-texdoc.provider', 'mthelp')
     atom.config.set('intentions-texdoc.providerPath', 'C:\\Program Files\\MiKTeX 2.9\\miktex\\bin\\x64\\mthelp')
   }
+  
   main.setDocProvider()
 
   it('finds matching documentation', () => {
@@ -19,7 +20,6 @@ describe('intentions-texdoc for Atom', () => {
           const position = new Point(2, 15)
           editor.setCursorBufferPosition(position)
           return main.provideIntentions().getIntentions({ textEditor: editor, bufferPosition: position }).then(matches => {
-            console.log(_.map(matches, 'title'))
             expect(matches.length !== 0).toBe(true, "Search on article finds results")
             return true
           })
