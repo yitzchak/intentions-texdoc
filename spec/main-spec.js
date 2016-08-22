@@ -7,11 +7,12 @@ import * as path from 'path'
 describe('intentions-texdoc for Atom', () => {
   let main = require('../lib/main')
   main.setDocProvider()
+  if (process.env['APPVEYOR']) atom.config.set('intentions-texdoc.provider', 'mthelp')
 
   it('finds matching documentation', () => {
       waitsForPromise(() => {
         return atom.workspace.open(path.join(__dirname, 'files', 'foo.tex')).then(editor => {
-          const position = new Point(0, 20)
+          const position = new Point(2, 15)
           editor.setCursorBufferPosition(position)
           return main.provideIntentions().getIntentions({ textEditor: editor, bufferPosition: position }).then(matches => {
             console.log(_.map(matches, 'title'))
