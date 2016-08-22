@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
-  export PATH=/usr/texbin:$PATH
+  export PATH=/Library/TeX/texbin:$PATH
   texdoc -l -M graphicx
   texdoc -l -M article
 fi
