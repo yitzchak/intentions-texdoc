@@ -7,7 +7,7 @@ import * as path from 'path'
 describe('intentions-texdoc for Atom', () => {
   let main = require('../lib/main')
   console.log(JSON.stringify(process.env))
-  if (process.env.APPVEYOR]) {
+  if (process.env.APPVEYOR) {
     atom.config.set('intentions-texdoc.provider', 'mthelp')
   }
   main.setDocProvider()
