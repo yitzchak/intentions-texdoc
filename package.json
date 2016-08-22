@@ -1,7 +1,7 @@
 {
   "name": "intentions-texdoc",
   "main": "./lib/main",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Access TeX documentation from inside Atom using intentions.",
   "author": "Tarn Burton <twburton@gmail.com>",
   "keywords": [
