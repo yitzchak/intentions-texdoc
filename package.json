@@ -61,12 +61,13 @@
       "description": "Pane to document in when result is shown in Atom",
       "type": "string",
       "enum": [
+        "no",
         "left",
         "right",
         "top",
-        "botton"
+        "bottom"
       ],
-      "default": "left",
+      "default": "right",
       "order": 3
     }
   },
