@@ -17,7 +17,7 @@ describe('intentions-texdoc for Atom', () => {
         return atom.workspace.open(path.join(__dirname, 'files', 'foo.tex')).then(editor => {
           const position = new Point(2, 15)
           editor.setCursorBufferPosition(position)
-          return main.provideIntentions().getIntentions({ textEditor: editor, bufferPosition: position }).then(matches => {
+          return main.provideIntentionsList().getIntentions({ textEditor: editor, bufferPosition: position }).then(matches => {
             expect(matches.length !== 0).toBe(true, "Search on article finds results")
             return true
           })
