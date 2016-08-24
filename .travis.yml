@@ -5,6 +5,9 @@ notifications:
 
 language: node_js
 
+node_js:
+  - "6"
+
 script:
   - script/travis-ci-build.sh
 
@@ -36,9 +39,9 @@ addons:
     - libgnome-keyring-dev
     - fakeroot
     - texlive
-    - texlive-doc-en
     - texlive-latex-base-doc
 
-;branches:
+branches:
   only:
     - master
+    - develop
