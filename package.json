@@ -50,12 +50,18 @@
       "default": "",
       "order": 1
     },
+    "enableSearchHighlighting": {
+      "description": "Enable search highlighting using the intentions package.",
+      "type": "boolean",
+      "default": true,
+      "order": 2
+    },
     "showResultInAtom": {
       "title": "Show Result in Atom",
       "description": "Show result in Atom. Depends on the pdf-view package being installed.",
       "type": "boolean",
       "default": false,
-      "order": 2
+      "order": 3
     },
     "split": {
       "description": "Pane to document in when result is shown in Atom",
@@ -68,7 +74,7 @@
         "bottom"
       ],
       "default": "right",
-      "order": 3
+      "order": 4
     }
   },
   "standard": {
