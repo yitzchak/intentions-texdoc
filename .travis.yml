@@ -3,6 +3,8 @@ notifications:
     on_success: never
     on_failure: change
 
+language: node_js
+
 script:
   - script/travis-ci-build.sh
 
@@ -35,6 +37,7 @@ addons:
     - fakeroot
     - texlive
     - texlive-doc-en
+    - texlive-latex-base-doc
 
 ;branches:
   only:
