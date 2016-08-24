@@ -19,7 +19,7 @@ This package relies on the [intentions](https://atom.io/packages/intentions) pac
 ## Usage
 
 A context dependent search for TeX and LaTeX documentation is initiated via the
-[intentions](http://atom.io/packages/intentions) package by pressing <kbd>Ctrl</kbd>+<kbd>Enter</kbd> on OSX and <kbd>Alt</kbd>+<kbd>Enter</kbd> on Linux and Windows.
+[intentions](http://atom.io/packages/intentions) package by pressing <kbd>Ctrl</kbd>+<kbd>Enter</kbd> on OSX or <kbd>Alt</kbd>+<kbd>Enter</kbd> on Linux and Windows. To see available context dependent searches press <kbd>Alt</kbd> on OSX or <kbd>Ctrl</kbd> or Linux and Windows.
 
 Text based documents can be opened in Atom by selecting the `Show Result in Atom` option in the settings page. If the
 [pdf-view](https://atom.io/packages/pdf-view) is installed then pdf documents will also be opened in Atom when `Show Result in Atom` is enabled. All other other documents will be opened using either texdoc or mthelp, depending on which one is selected in your settings.
