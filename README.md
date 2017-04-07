@@ -1,5 +1,7 @@
 # intentions-texdoc
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/yitzchak/intentions-texdoc.svg)](https://greenkeeper.io/)
+
 [![Travis&#x2011;CI Build Status](http://img.shields.io/travis/yitzchak/intentions-texdoc/master.svg?label=Linux/OSX%20build)](http://travis-ci.org/yitzchak/intentions-texdoc) [![AppVeyor Build Status](http://img.shields.io/appveyor/ci/yitzchak/intentions-texdoc/master.svg?label=Windows%20build)](http://ci.appveyor.com/project/yitzchak/intentions-texdoc) [![David](http://img.shields.io/david/yitzchak/intentions-texdoc.svg)](http://david-dm.org/yitzchak/intentions-texdoc)
 
 Access TeX documentation from inside [Atom](http://atom.io) using
